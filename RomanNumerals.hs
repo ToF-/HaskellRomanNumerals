@@ -9,7 +9,7 @@ toRoman 9         = "IX"
 toRoman n | n <40 = parseRoman n 10 'X'
 toRoman n | n <50 = "XL" ++ toRoman (n `mod` 40)
 toRoman n | n <90 = parseRoman n 50 'L'
-                  
+toRoman n | n <100= "XC" ++ toRoman (n `mod` 90)        
 toRoman n         = parseRoman n 100 'C'
 
 
