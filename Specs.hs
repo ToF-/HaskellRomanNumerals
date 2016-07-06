@@ -1,9 +1,11 @@
 import Test.Hspec
 import RomanNumerals
 
+shouldConvertTo n r = do
+    it ("should convert " ++ (show n) ++ " to " ++ r) $ do
+        toRoman n `shouldBe` r
+
 main = hspec $ do
     describe "toRoman" $ do
-        it "should convert 1 to I" $ do
-            toRoman 1 `shouldBe` "I"
-        it "should convert 3 to III" $ do
-            toRoman 3 `shouldBe` "III"
+        1 `shouldConvertTo` "I"
+        3 `shouldConvertTo` "III"
