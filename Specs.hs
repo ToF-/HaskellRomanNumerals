@@ -9,3 +9,4 @@ main = hspec $ do
     describe "toRoman" $ do
         1 `shouldConvertTo` "I"
         3 `shouldConvertTo` "III"
+        4 `shouldConvertTo` "IV"
