@@ -16,3 +16,4 @@ main = hspec $ do
         30 `shouldConvertTo` "XXX"
         34 `shouldConvertTo` "XXXIV"
         222 `shouldConvertTo` "CCXXII"
+        46 `shouldConvertTo` "XLVI"
