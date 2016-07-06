@@ -13,3 +13,4 @@ main = hspec $ do
         5 `shouldConvertTo` "V"
         8 `shouldConvertTo` "VIII"
         9 `shouldConvertTo` "IX"
+        30 `shouldConvertTo` "XXX"
