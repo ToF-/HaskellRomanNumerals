@@ -11,3 +11,4 @@ main = hspec $ do
         3 `shouldConvertTo` "III"
         4 `shouldConvertTo` "IV"
         5 `shouldConvertTo` "V"
+        8 `shouldConvertTo` "VIII"
