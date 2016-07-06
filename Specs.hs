@@ -3,7 +3,7 @@ import RomanNumerals
 
 shouldConvertTo n r = do
     it ("should convert " ++ (show n) ++ " to " ++ r) $ do
-        toRoman n `shouldBe` r
+        (fst (toRoman ("",n))) `shouldBe` r
 
 main = hspec $ do
     describe "toRoman" $ do
