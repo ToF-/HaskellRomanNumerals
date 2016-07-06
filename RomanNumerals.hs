@@ -2,7 +2,8 @@ module RomanNumerals where
 
 toRoman :: Int -> String
 toRoman 0         = ""
-toRoman n | n < 4 = replicate n 'I'
+toRoman n | n < 4 = replicate (n `div` 1) 'I'
+                   ++ toRoman (n `mod` 1) 
 toRoman 4         = "IV"
 toRoman n | n < 9 = "V" ++ toRoman (n - 5)
 toRoman 9         = "IX"
